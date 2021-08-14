@@ -13,4 +13,5 @@ public interface TaskMapper {
     // @Select("select * from task")
     List<Task> findAll();
 
+    Task findById(int id);
 }

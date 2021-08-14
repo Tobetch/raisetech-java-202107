@@ -21,8 +21,10 @@ public class TopController {
     @GetMapping
     public String index(Model model) {
         List<Task> taskList = topService.getAllTasks();
-
         model.addAttribute("taskList", taskList);
+
+        // Task task = topService.getTask(2);
+        // model.addAttribute("task", task);
 
         return "index";
     }

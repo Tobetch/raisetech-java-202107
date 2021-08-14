@@ -18,4 +18,8 @@ public class TopService {
         return taskMapper.findAll();
     }
 
+    public Task getTask(int id) {
+        return taskMapper.findById(id);
+    }
+
 }

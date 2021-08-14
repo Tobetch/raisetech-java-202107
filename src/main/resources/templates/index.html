@@ -14,6 +14,21 @@
         <span th:text="${task.title}"></span>
         <span th:text="${task.content}"></span>
     </div>
+
+    <!-- <form role="form" action="/" th:action="@{/}" th:object="${topForm}" method="post">
+        <div class="form-group">
+            <label class="control-label" for="inputText"><abbr title="required">*</abbr> Text</label>
+            <input type="text" class="form-control" id="inputText" name="ftext" th:field="*{ftext}" />
+            <span th:if="${#fields.hasErrors('ftext')}" th:errors="*{ftext}" class="help-block">error!</span>
+    </div>
+    <div class="form-group">
+        <label class="control-label" for="inputTextarea1">Textarea</label>
+        <textarea rows="3" cols="80" class="form-control" id="inputTextarea" name="farea"
+            th:field="*{farea}"></textarea>
+        <span th:if="${#fields.hasErrors('farea')}" th:errors="*{farea}" class="help-block">error!</span>
+    </div>
+    <button type="submit">送信</button>
+    </form> -->
 </body>
 
 </html>
