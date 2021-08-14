@@ -9,6 +9,11 @@
 </head>
 
 <body>
+    <p>タスク一覧</p>
+    <div th:each="task :*{taskList}">
+        <span th:text="${task.title}"></span>
+        <span th:text="${task.content}"></span>
+    </div>
 </body>
 
 </html>
